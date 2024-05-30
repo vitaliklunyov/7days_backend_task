@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Date{% endblock %}
+
+{% block body %}
+    The time zone {{ input.timezone }} has {{ output.offset_in_minutes }} minutes offset to UTC on the given day at noon.<br/>
+    February in this year is {{ output.days_in_february }} days long.<br/>
+    The specified month {{ output.current_month }} is {{ output.days_in_current_month }} days long.
+{% endblock %}
